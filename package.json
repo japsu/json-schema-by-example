@@ -1,0 +1,38 @@
+{
+  "name": "json-schema-by-example",
+  "version": "0.1.0",
+  "description": "Generate a JSON schema from an example object",
+  "main": "index.js",
+  "engines": {
+    "node": ">= 6.0"
+  },
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japsu/json-schema-by-example.git"
+  },
+  "keywords": [
+    "JSON",
+    "schema"
+  ],
+  "author": "Santtu Pajukanta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/japsu/json-schema-by-example/issues"
+  },
+  "homepage": "https://github.com/japsu/json-schema-by-example#readme",
+  "devDependencies": {
+    "assert": "^1.4.0",
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "eslint-plugin-mocha": "^2.2.0",
+    "jsonschema": "^1.1.0",
+    "mocha": "^2.5.2"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  }
+}
