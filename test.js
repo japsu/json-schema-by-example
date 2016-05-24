@@ -80,6 +80,6 @@ describe('schemaByExample', () => {
     assert(validate(example, generatedSchema).valid);
 
     const example2 = [2, 'foo', null, undefined, false];
-    assert(validate(example2, expectedSchema).valid);
+    assert(validate(example2, generatedSchema).valid);
   });
 });
