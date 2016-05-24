@@ -9,6 +9,10 @@ const rules = [
   [_.isBoolean, () => ({type: 'boolean'})],
   [_.isString, () => ({type: 'string'})],
   [_.isRegExp, pattern => ({type: 'string', pattern})],
+
+  // Empty array -> array of any items
+  [(example) => _.isArray(example) && !example.length, () => ({type: 'array'})],
+
   [_.isArray, items => ({type: 'array', items: schemaByExample(items[0])})],
   [_.isPlainObject, object => ({
     type: 'object',
