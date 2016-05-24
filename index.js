@@ -25,5 +25,5 @@ function schemaByExample(example) {
     }
   }
 
-  return undefined;
+  throw new TypeError(example);
 }

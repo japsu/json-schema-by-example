@@ -63,4 +63,11 @@ describe('schemaByExample', () => {
     assert.deepEqual(generatedSchema, expectedSchema);
     assert(validate(example, expectedSchema).valid);
   });
+
+  it('throws TypeError on unrecognized input', () => {
+    const example = {foo: Symbol()};
+    assert.throws(() => {
+      schemaByExample(example);
+    }, TypeError);
+  });
 });
