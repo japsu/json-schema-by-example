@@ -5,6 +5,7 @@ module.exports = schemaByExample;
 
 
 const rules = [
+  [_.isNull, () => ({type: 'null'})],
   [_.isNumber, () => ({type: 'number'})],
   [_.isBoolean, () => ({type: 'boolean'})],
   [_.isString, () => ({type: 'string'})],
